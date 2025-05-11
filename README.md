@@ -20,3 +20,21 @@ Memsy is an AI-powered meme generation tool that lets users input a text prompt 
    ```bash
    git clone https://github.com/your-repo/memsy.git
    cd memsy
+2.Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+3.Run the Streamlit app:
+  ```bash
+  streamlit run streamlit_demo.py
+---
+##💻 Usage
+1.Open the Streamlit app in your browser.
+
+2.Enter a text prompt in the input box.
+
+3.Select a meme template from the suggestions.
+
+4.Click "Generate Meme" to create your meme.
+
+5.Save or share your meme!
+
