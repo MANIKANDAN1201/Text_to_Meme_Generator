@@ -21,45 +21,43 @@ Memsy is an AI-powered meme generation tool that lets users input a text prompt 
    git clone https://github.com/your-repo/memsy.git
    cd memsy
 ---
-##💻 Usage
-1.Open the Streamlit app in your browser.
 
-2.Enter a text prompt in the input box.
+## Use Cases
 
-3.Select a meme template from the suggestions.
+- **Social Media Content Creation**: Quickly generate memes for social media posts.
+- **Marketing Campaigns**: Create engaging and humorous content for marketing purposes.
+- **Entertainment**: Have fun generating memes for personal use or sharing with friends.
+- **Meme Research**: Explore how machine learning models can be used for creative tasks like meme generation.
 
-4.Click "Generate Meme" to create your meme.
+## Tech Stack
 
-5.Save or share your meme!
----
-📁 Project Structure
-bash
-Copy
-Edit
-memsy/
-├── notebooks/
-│   ├── Baselines.ipynb                  # Baseline evaluations for template matching
-│   ├── sentencebert-finetuning.ipynb   # Fine-tuning Sentence-BERT
-│   ├── transformer_training.ipynb      # Training Roberta for meme classification
-├── utils/
-│   ├── sbert_meme_classifier.py        # SBERT-based classifier
-│   ├── roberta_meme_classifier.py      # Roberta-based classifier
-│   ├── draw_utils.py                   # Utilities for drawing captions on images
-├── data/                               # Dataset and pre-trained models
-├── streamlit_demo.py                   # Main Streamlit app
-├── requirements.txt                    # Python dependencies
----
-🧠 Tech Stack
-Frontend
-Streamlit: Provides an interactive and user-friendly interface for the application.
+### Frontend
+- **Streamlit**: Provides an interactive and user-friendly interface for the application.
 
-Backend
-Python: Core programming language for the project.
+### Backend
+- **Python**: Core programming language for the project.
+- **PyTorch**: Used for training and fine-tuning machine learning models.
+- **Hugging Face Transformers**: For pre-trained models like Roberta and Sentence-BERT.
+- **OpenAI GPT-3**: For generating witty captions.
 
-PyTorch: Used for training and fine-tuning machine learning models.
+## Machine Learning Models
 
-Hugging Face Transformers: For pre-trained models like Roberta and Sentence-BERT.
+- **Sentence-BERT**: Fine-tuned for text-to-template matching.
+- **Roberta**: Trained for meme classification.
+- **CLIP**: Used for text-to-image matching.
+- **GPT-3**: Generates captions for memes.
 
-OpenAI GPT-3: For generating witty captions.
----
+## Data
 
+- **Meme Dataset**: A cleaned dataset of 900k memes, including captions, labels, and image paths.
+
+## How It Works
+
+1. **Input Prompt**: The user enters a text prompt in the Streamlit interface.
+2. **Template Matching**:
+   - The system uses a classifier (e.g., SBERT, Roberta, or CLIP) to suggest relevant meme templates.
+   - The user selects a template from the suggestions.
+3. **Caption Generation**:
+   - GPT-3 generates a witty caption based on the input prompt and selected template.
+4. **Final Meme**:
+   - The caption is overlaid on the template, and the final meme is displayed to the user.
