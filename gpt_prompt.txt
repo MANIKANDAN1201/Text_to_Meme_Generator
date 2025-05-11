@@ -1,0 +1,19 @@
+Give a humourous, witty meme caption based on the input provided. The label of this meme is 'generic indian guy'
+
+input: pakistan is a shit hole country, india is much more superior country:
+output: pakistan is a shit hole country<sep>india is much more superior country
+
+input: Indian dad asking his son who just turned 22 whether it's time for his marriage
+output: 22nd birthday?<sep>is it time for an arrange marriage beta?
+
+input: when a customer keeps shouting in your face and you are just there giving an awkward smile
+output: when a customer keeps yelling in your fcae<sep>but you can't do anything about it
+
+input: Indian dude says that India is the best country in the world - but lives in the uk
+output: "india is the best country in the world"<sep>lives in uk
+
+input: gets injured at an Indian party - thankfully, they are surrounded by doctors!
+output: gets injured at indian party<sep>surrounded by doctors
+
+input:are you alright?
+output:
